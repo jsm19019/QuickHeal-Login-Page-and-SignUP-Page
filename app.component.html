@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="myscript.js" ></script>
+  <link rel="stylesheet" href="signup.html">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>QuickHeal</title>
+</head>
+<body>
+  <div class="flex">
+    <div class="container h-[25.92cm] w-[70cm] bg-[#F3FBFF] ">
+      <div>
+             <div class="grid grid-cols-2 my-5 ">
+                  <div class="px-5 py-6 " >
+                    <img src="Logo(1).png" alt="logo">
+                  </div>
+                  <div id="dp" class="px-6 py-6 text-right" >
+                    <select title="dropdown" class="dropdown px-[1.5cm] border-[1px] rounded-md cursor-pointer border-[#a8a6a6] py-[0.3cm] bg-transparent text-[#8F8F8F] "  >
+                      <option value="English" class="cursor-pointer m-9 "  >English</option>
+                      <option value="French" class="cursor-pointer text-left "  >French</option>
+                      <option value="Spanish" class="cursor-pointer">Spanish</option>
+                      <option value="Chinese" class="cursor-pointer" >Chinese</option>
+                    </select>
+                  </div>
+             </div>
+      </div>
+      <div class="my-60 mx-96 " >
+         <img src="main.png" alt="main">
+         <div class=" my-9 text-center "  >
+          <h1 id="text" class="text text-[#023047] font-extrabold text-5xl "  >Easy scoring mechanism to understand your digital safety</h1>
+         </div>
+      </div>
+           <div class="my-[6.8cm]" >
+             <div class="flex space-x-[7.2cm]  " >
+                 <div class="mx-3  my-5" ><h1>© 2022 Quick Heal Technologies Ltd. All rights reserved.  <span class="text-[#F16522] underline cursor-pointer " >Privacy Policy</span> |   <span class=" cursor-pointer text-[#F16522] underline" >License Agreement</span></h1></div>
+                 <div>
+                    <div >
+                        <div class="flex space-x-2 -my-[0.1cm] justify-end " >
+                       <img class="m-2" src="tt.png" alt="main">
+                       <img class="m-2" src="fbg.png" alt="main">
+                       <img class="m-2" src="bg.png" alt="main">
+                       <img class="m-2" src="yt.png" alt="main">
+                       <img class="m-2" src="qh.png" alt="main">
+                        </div>
+                    </div>
+                  </div>
+             </div>
+           </div>
+    </div>
+    <div  id="login" class="container h-[25.92cm] bg-[#FFFFFF]">
+      <div class="container h-[18cm] w-[8.8cm] mx-[5.1cm] my-[5.4cm]  "  >
+          <h1 class="text-[#012131] text-5xl font-bold my-10 ">Log in</h1>
+          <div  class="space-y-5" >
+              <form>
+                <h1 class="font-bold text-[#393E4A]  " >Mobile Number/Email<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-4  py-2.5 my-4 rounded-md text-start " placeholder="Enter your Mobile Number/Email" >
+              </form>
+              <form>
+                <h1 class="font-bold text-[#393E4A] " >Password<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-3  py-2.5 my-4 rounded-md  " placeholder="Enter your Password">
+              </form>
+              <h2 class=" text-[#F16522] text-right cursor-pointer " onclick="fp()"  >Forgot Password?</h2>
+              <button value="true" name="signin" role="button" class=" bg-[#F16522] text-white font-bold w-[8cm] h-[1.2cm] rounded-lg " >Sign in </button>
+              <div><h1 class=" text-[#6A707E] text-center " >&#8212;&#8212;&#8212;&#8212;&#8212;&nbsp;or continue with&nbsp;&#8212;&#8212;&#8212;&#8212;&#8212;</h1></div>
+              <div class="grid grid-cols-2  " >
+                 <div class="mx-[0.4cm] cursor-pointer " ><img src="gm.png" alt="gm" ></div>
+                 <div class="mx-[0.4cm] cursor-pointer " ><img src="fb.png" alt="fb" ></div>
+              </div>
+                  <div class="text-[#6D717A] text-center font-medium " >Don’t have an account?<span class="text-[#F16522] cursor-pointer font-semibold  " onclick="signup()" >&nbsp;&nbsp;Sign Up </span></div>
+          </div>
+      </div>
+    </div>
+
+    <div id="signup" style="display: none;" class="container h-[25.92cm] bg-[#FFFFFF]">
+      <div class="container h-[21cm] w-[8.8cm] mx-[5.1cm] my-[1.6cm]  "  >
+          <h1 class="text-[#012131] text-5xl font-bold my-10 "  >Sign up</h1>
+          <div  class="space-y-5" >
+              <form>
+                <h1 class="font-bold text-[#393E4A]  " >Name<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-4  py-2.5 my-4 rounded-md text-start "  placeholder="Enter your Name" >
+              </form>
+              <form>
+                <h1 class="font-bold text-[#393E4A]  " >Product Key<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-4  py-2.5 my-4 rounded-md text-start " placeholder="Enter your Product Key" >
+              </form>
+              <form>
+                <h1 class="font-bold text-[#393E4A]  " >Email ID<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-4  py-2.5 my-4 rounded-md text-start " placeholder="Enter your Email ID" >
+              </form>
+              <form>
+                <h1 class="font-bold text-[#393E4A]  " >Phone Number (Optional)<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-4  py-2.5 my-4 rounded-md text-start " placeholder="Enter your Phone Number" >
+              </form>
+              <form>
+                <h1 class="font-bold text-[#393E4A] " >Password<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-3  py-2.5 my-4 rounded-md  " placeholder="Enter your Password">
+              </form>
+              <form>
+                <h1 class="font-bold text-[#393E4A] " >Confirm Password<span class="text-red-500" >*</span></h1>
+                <input class="border-[#D4D5D9] border-[1px] w-[8cm] px-3  py-2.5 my-4 rounded-md  " placeholder="Enter your Password">
+              </form>
+              <h2 class="text-left font-medium text-[#393E4A] cursor-pointer "  >By Signing up you agree to the Quick Heal <span class="text-[#F16522] underline" >License Agreement</span>  and <span class="text-[#F16522] underline" >Privacy Policy</span> </h2>
+              <button value="true" name="signin" role="button"   class=" bg-[#F16522] text-white font-bold w-[8cm] h-[1.2cm]  rounded-lg " >Create Account </button>
+              <h1 class="text-center text-[#6A707E]  " >&#8212;&#8212;&#8212;&#8212;&#8212;&nbsp;or continue with&nbsp;&#8212;&#8212;&#8212;&#8212;&#8212;</h1>
+              <div class="grid grid-cols-2  " >
+                <div class="mx-[0.4cm] cursor-pointer " ><img src="gm.png" alt="gm" ></div>
+                <div class="mx-[0.4cm] cursor-pointer " ><img src="fb.png" alt="fb" ></div>
+             </div>
+             <div >
+                 <div class="text-[#6D717A] font-medium text-center cursor-pointer "  >Already have an account?  <span class="text-[#F16522] font-semibold " onclick="login()" >&nbsp;&nbsp;Login</span> </div>
+          </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+</body>
+</html>
